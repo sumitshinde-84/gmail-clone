@@ -1,9 +1,31 @@
 <template>
-  <div class="home">
-    
-  </div>
+  <div id="HomeView" class="w-full bg-white ml-2 rounded-t-xl h-full shadow-sm">
+    <div class="border-b">
+      <div class="flex items-center justify-between px-4 my-3">
+        <IconComponent 
+            class="m-2 ml-2.5"
+            iconString="trash"
+            iconColor="#636363"
+            :iconSize="19"
+            text="Google apps"
+            hoverColor="hover:bg-gray-200"
+          />
+          <div class="text-xs text-gray-500">1-50 of 153</div>
+      </div>
+    </div>
+    <div>
+      <MessageRow
+         from="ronel@gamil.com"
+         subject="test row 1"
+         body="this is the body text"
+         time="Jun 20 15:15"
+      />
+    </div>
+</div>
 </template>
 
-<script>
+<script setup>
+  import IconComponent from '@/components/IconComponent.vue'
+  import MessageRow from "@/components/MessageRow.vue"
 
 </script>
